@@ -9,15 +9,30 @@ namespace ClassSample.Models
 {
     public class Documento
     {
-        public string _tipo { get; set; }
-        public string _correlativo {  get; set; }
-        public double _valor {  get; set; }
+        private string _tipo;
+        public string tipo
+        { 
+            get => _tipo; 
+            set => _tipo = value; 
+        }
+        private string _correlat;
+        public string correlativo
+        {
+            get => _correlat;
+            set => _correlat = value;
+        }
+        private double _valor;
+        public  double valor
+        {
+            get => _valor; 
+            set => _valor = value;
+        }
 
 
         public Documento(string tipo, string correlativo, double valor)
         {
             _tipo = tipo;
-            _correlativo = correlativo;
+            _correlat = correlativo;
             _valor = valor;
         }
     }

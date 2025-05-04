@@ -1,18 +1,35 @@
 ﻿
+using System.Runtime.CompilerServices;
+
 namespace ClassSample.Models
 {
     public class Persona
     {
-        public int _id { get; set; }
-        public string _name { get; set; }
-        public int _departamento { get; set; }
-
-
-        public Persona(int id, string name, int departamento)
+        private int _id;
+        public int identificacion
         {
-            _id = id;
+            get => _id; 
+            set => _id = value;
+        }
+        private string _name;
+        public string nombre
+        {
+            get => _name;
+            set => _name = value;
+        }
+        private int _depart;
+        public int departamento
+        {
+            get => _depart;
+            set => _depart = value;
+        }
+
+
+        public Persona(int identificacion, string  name, int departamento)
+        {
+            _id = identificacion;
             _name = name;
-            _departamento = departamento;
+            _depart = departamento;
         }
     }
 }
