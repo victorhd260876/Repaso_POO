@@ -30,7 +30,7 @@ namespace ClassSample
         }
 
         //constructor
-        public Vivienda(string tipo, string direccion, string distrito)
+        public Vivienda(string direccion, string distrito)
         {
             _tipo = tipo;
             _direccion = direccion;
