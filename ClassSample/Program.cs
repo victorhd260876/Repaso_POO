@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Vivienda vivienda = new Vivienda("Edificio","Av. Lima 333","Lima");
+            Console.WriteLine(vivienda.tipo);
+
+            vivienda.tipo = "Condominio";
+            Console.WriteLine(vivienda.tipo);
         }
     }
 }
